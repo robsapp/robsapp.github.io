@@ -8,6 +8,19 @@
           enable_page_level_ads: true
      });
 </script>
+	
+	<script>
+    const s = document.createElement('script');
+    s.src='//aigneloa.com/pfe/current/tag.min.js?z=2760220';
+    s.onload = (sdk) => {
+        sdk.onPermissionDefault(() => {});
+        sdk.onPermissionAllowed(() => {});
+        sdk.onPermissionDenied(() => {});
+        sdk.onAlreadySubscribed(() => {});
+        sdk.onNotificationUnsupported(() => {});
+    }
+    document.head.appendChild(s);
+</script>
 
 
 <!-- Google Tag Manager -->
